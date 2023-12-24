@@ -1,0 +1,29 @@
+{
+  "data": {
+    "title": "Hi! I'm software developer, Phyu Sin Khant Aung.",
+    "subtitle": "Frontend + Backend",
+    "paragraph": "Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem",
+    "skills": [
+      {
+        "id": 1,
+        "name": "React"
+      },
+      {
+        "id": 2,
+        "name": "Next"
+      },
+      {
+        "id": 3,
+        "name": "Nodejs"
+      },
+      {
+        "id": 3,
+        "name": "Express"
+      },
+      {
+        "id": 4,
+        "name": "Mongodb"
+      }
+    ]
+  }
+}
