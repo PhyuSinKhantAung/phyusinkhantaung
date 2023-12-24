@@ -24,6 +24,7 @@ const AboutMe = () => {
               }) => (
                 <li key={skill.id}>
                   {skill.name}
+                  {/* // TODO ** will fixed logo soon */}
                   {/* <Image
                     src={skill.logo}
                     alt={skill.name}
