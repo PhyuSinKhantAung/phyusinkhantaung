@@ -6,23 +6,28 @@
     "skills": [
       {
         "id": 1,
-        "name": "React"
+        "name": "React",
+        "logo": "/react.svg",
+        "size": 24
       },
       {
         "id": 2,
-        "name": "Next"
+        "name": "Next",
+        "logo": "/nextjs.svg",
+        "size": 24
       },
       {
         "id": 3,
-        "name": "Nodejs"
+        "name": "Nodejs",
+        "logo": "/nodejs.svg",
+        "size": 50
       },
-      {
-        "id": 3,
-        "name": "Express"
-      },
+
       {
         "id": 4,
-        "name": "Mongodb"
+        "name": "Mongodb",
+        "logo": "/mongodb.svg",
+        "size": 50
       }
     ]
   }

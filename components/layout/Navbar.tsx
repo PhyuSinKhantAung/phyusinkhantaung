@@ -16,11 +16,11 @@ export default function Navbar({ navData }: { navData: Array<NavItem> }) {
   const { setTheme, theme } = useTheme();
 
   return (
-    <nav className=" w-full flex justify-center py-3 md:text-lg shadow sticky">
+    <nav className=" w-full flex justify-center py-3 md:text-lg shadow">
       <Terminal className="w-[25%]" />
       <div className=" ">
         <ul className="flex gap-x-10 md:gap-x-24">
-          {navData.map((item: NavItem) => (
+          {navData?.map((item: NavItem) => (
             <li key={item.name}>
               <Link
                 href={item.href}

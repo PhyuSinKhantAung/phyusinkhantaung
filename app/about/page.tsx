@@ -1,7 +1,7 @@
 import AboutMe from "@/components/AboutMe";
 import React from "react";
 
-const About = () => {
+const AboutPage = () => {
   return (
     <>
       <AboutMe />
@@ -9,4 +9,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;
