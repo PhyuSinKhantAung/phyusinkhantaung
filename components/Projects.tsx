@@ -27,7 +27,9 @@ const Projects = () => {
         {ProjectsData.data.map((project: Project) => (
           <Card
             key={project.id}
-            className="w-full md:w-72 md:col-span-2 col-span-full border-2 border-solid border-black shadow-[6px_6px_#2d323d]"
+            className="w-full md:w-72 md:col-span-2 col-span-full
+             border-2 border-solid border-black dark:border-[#c8cace]
+             shadow-[6px_6px_#2d323d] dark:shadow-[6px_6px_#c8cace]"
           >
             <CardHeader className="p-0 m-0 mb-4">
               <Image
@@ -45,13 +47,13 @@ const Projects = () => {
               <CardDescription>{project.description}</CardDescription>
             </CardContent>
             <CardFooter>
-              <div className="mx-auto">
-                <Button size="sm" className="text-sm">
+              <div className="flex gap-x-4 justify-center items-center mx-auto">
+                <Button variant="retro" size="sm">
                   <a href={project.repo_link} target="_blank">
                     Github
                   </a>
                 </Button>
-                <Button size="sm" className="text-sm" variant="link">
+                <Button size="sm" className="text-sm" variant="retro">
                   <a href={project.demo_link} target="_blank">
                     View Demo
                   </a>
