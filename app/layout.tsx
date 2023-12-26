@@ -5,7 +5,7 @@ import NavData from '@/data/nav.json';
 import Navbar from '@/components/layout/Navbar';
 import { ThemeProvider } from '@/components/layout/ThemeProvider';
 
-export const montserrat = Alegreya({
+export const alegreya = Alegreya({
   subsets: ['latin'],
 });
 
@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} text-sm `}>
+      <body className={`${alegreya.className} text-sm `}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
