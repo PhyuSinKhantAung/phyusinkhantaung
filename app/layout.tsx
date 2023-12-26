@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { Montserrat, Oswald, Alegreya } from 'next/font/google';
+import { Alegreya } from 'next/font/google';
 import NavData from '@/data/nav.json';
 import Navbar from '@/components/layout/Navbar';
 import { ThemeProvider } from '@/components/layout/ThemeProvider';
@@ -35,7 +35,7 @@ export default function RootLayout({
         <footer>
           <hr />
           <span className="text-muted-foreground flex justify-center items-center h-40">
-            Made by Phyu Sin © 2023{' '}
+            Made by Phyu Sin © 2023
           </span>
         </footer>
       </body>
