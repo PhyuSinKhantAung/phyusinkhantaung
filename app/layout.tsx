@@ -5,7 +5,7 @@ import NavData from '@/data/nav.json';
 import Navbar from '@/components/layout/Navbar';
 import { ThemeProvider } from '@/components/layout/ThemeProvider';
 
-export const alegreya = Alegreya({
+const alegreya = Alegreya({
   subsets: ['latin'],
 });
 
