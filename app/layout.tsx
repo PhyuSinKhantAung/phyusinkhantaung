@@ -1,17 +1,17 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { Montserrat } from "next/font/google";
-import NavData from "@/data/nav.json";
-import Navbar from "@/components/layout/Navbar";
-import { ThemeProvider } from "@/components/layout/ThemeProvider";
+import type { Metadata } from 'next';
+import './globals.css';
+import { Montserrat, Oswald, Alegreya } from 'next/font/google';
+import NavData from '@/data/nav.json';
+import Navbar from '@/components/layout/Navbar';
+import { ThemeProvider } from '@/components/layout/ThemeProvider';
 
-export const montserrat = Montserrat({
-  subsets: ["latin"],
+export const montserrat = Alegreya({
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "This site will show about me.",
+  title: 'My Portfolio',
+  description: 'This site will show about me.',
 };
 
 export default function RootLayout({
