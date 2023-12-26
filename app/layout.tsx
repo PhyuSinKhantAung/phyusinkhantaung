@@ -32,6 +32,12 @@ export default function RootLayout({
 
           {children}
         </ThemeProvider>
+        <footer>
+          <hr />
+          <span className="text-muted-foreground flex justify-center items-center h-40">
+            Made by Phyu Sin © 2023{' '}
+          </span>
+        </footer>
       </body>
     </html>
   );

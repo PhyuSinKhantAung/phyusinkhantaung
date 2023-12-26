@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Facebook",
+      "link": ""
+    },
+    {
+      "id": "2",
+      "name": "Instagram",
+      "link": ""
+    },
+    {
+      "id": "3",
+      "name": "Github",
+      "link": ""
+    },
+    {
+      "id": "4",
+      "name": "Linkedin",
+      "link": ""
+    }
+  ]
+}
