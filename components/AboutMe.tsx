@@ -1,10 +1,10 @@
-import React from "react";
-import about from "@/data/about.json";
-import Image from "next/image";
+import React from 'react';
+import about from '@/data/about.json';
+import Image from 'next/image';
 
 const AboutMe = () => {
   return (
-    <div className="md:max-w-[80%] mx-auto p-2 my-5 md:flex items-center">
+    <div className="md:max-w-[80%] mx-auto p-2 my-5 md:my-32 md:flex items-center">
       <div className=" w-full ">
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
           {about.data.title}
@@ -36,12 +36,13 @@ const AboutMe = () => {
           )}
         </ul>
       </div>
-      <div className="w-full mt-12 md:m-0">
+      <div className="w-full md:m-0 md:flex md:justify-end mt-20">
         <Image
-          src={"/my-photo.jpg"}
+          src={'/my-pic.jpg'}
           alt="my-picture"
-          width={600}
-          height={800}
+          className="shadow-[3rem_-3rem_0.2rem_#848484] dark:shadow-[3rem_-3rem_0.2rem_#DBDBDB] mx-auto"
+          width={350}
+          height={600}
         ></Image>
       </div>
     </div>
