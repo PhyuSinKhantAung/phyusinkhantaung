@@ -52,6 +52,7 @@ const Contact = () => {
             {SocialsData.data.map((social: Social) => (
               <a
                 href={social.link}
+                target='_blank'
                 key={social.id}
                 className="flex gap-x-2 mb-5 items-center"
               >
