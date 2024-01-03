@@ -55,7 +55,7 @@ const skills = [
 ];
 const AboutMe = () => {
   return (
-    <div className="md:max-w-[80%] mx-auto p-2 my-5 md:my-32 md:flex items-center">
+    <div className="md:max-w-[80%] mx-auto p-2 my-5 md:my-20 md:flex items-center">
       <div className=" w-full ">
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
           {about.data.title}
@@ -64,6 +64,15 @@ const AboutMe = () => {
         <p className="leading-7 [&:not(:first-child)]:mt-6 text-base">
           {about.data.paragraph}
         </p>
+
+        <p className="leading-7 [&:not(:first-child)]:mt-6 text-base">
+          {about.data.paragraph_2}
+        </p>
+
+        <p className="text-lg [&:not(:first-child)]:mt-6  font-semibold">
+          {about.data.paragraph_3}
+        </p>
+
         <ul className="my-4 ml-4 list-disc [&>li]:mt-4 grid grid-cols-12 text-base">
           {skills.map((skill: { id: number; name: string; icon: any }) => (
             <li
@@ -80,9 +89,9 @@ const AboutMe = () => {
         <Image
           src={'/my-pic.jpg'}
           alt="my-picture"
-          className="shadow-[3rem_-3rem_0.2rem_#848484] dark:shadow-[3rem_-3rem_0.2rem_#DBDBDB] mx-auto"
-          width={350}
-          height={600}
+          className="shadow-[3rem_-3rem_0.2rem_#848484] dark:shadow-[3rem_-3rem_0.2rem_#DBDBDB] mx-auto md:ml-24"
+          width={500}
+          height={800}
         ></Image>
       </div>
     </div>
