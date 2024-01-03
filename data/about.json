@@ -1,34 +1,7 @@
 {
   "data": {
-    "title": "Hi! I'm Phyu Sin Khant Aung, a software developer.",
+    "title": "🚀 Welcome to my Digital Playground!",
     "subtitle": "Frontend + Backend",
-    "paragraph": "Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem",
-    "skills": [
-      {
-        "id": 1,
-        "name": "React",
-        "logo": "/react.svg",
-        "size": 24
-      },
-      {
-        "id": 2,
-        "name": "Next",
-        "logo": "/nextjs.svg",
-        "size": 24
-      },
-      {
-        "id": 3,
-        "name": "Nodejs",
-        "logo": "/nodejs.svg",
-        "size": 50
-      },
-
-      {
-        "id": 4,
-        "name": "Mongodb",
-        "logo": "/mongodb.svg",
-        "size": 50
-      }
-    ]
+    "paragraph": "Hey there! I'm Phyu Sin Khant Aung, a passionate full-stack web developer on a mission to bring digital ideas to life. With a solid foundation in both front-end and back-end technologies, I thrive on turning concepts into seamless, user-centric experiences."
   }
 }

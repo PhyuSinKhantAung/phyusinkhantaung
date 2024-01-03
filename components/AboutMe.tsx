@@ -1,7 +1,58 @@
 import React from 'react';
 import about from '@/data/about.json';
 import Image from 'next/image';
+import { FaNode, FaReact } from 'react-icons/fa';
+import { TbBrandNextjs } from 'react-icons/tb';
+import {
+  SiJavascript,
+  SiMongodb,
+  SiNestjs,
+  SiTypescript,
+  SiVite,
+} from 'react-icons/si';
 
+const skills = [
+  {
+    id: 1,
+    name: 'React',
+    icon: <FaReact />,
+  },
+  {
+    id: 2,
+    name: 'Next',
+    icon: <TbBrandNextjs />,
+  },
+  {
+    id: 3,
+    name: 'Nodejs',
+    icon: <FaNode />,
+  },
+  {
+    id: 4,
+    name: 'Mongodb',
+    icon: <SiMongodb />,
+  },
+  {
+    id: 5,
+    name: 'Javascript',
+    icon: <SiJavascript />,
+  },
+  {
+    id: 6,
+    name: 'Typescript',
+    icon: <SiTypescript />,
+  },
+  {
+    id: 7,
+    name: 'Vite',
+    icon: <SiVite />,
+  },
+  {
+    id: 8,
+    name: 'Nestjs',
+    icon: <SiNestjs />,
+  },
+];
 const AboutMe = () => {
   return (
     <div className="md:max-w-[80%] mx-auto p-2 my-5 md:my-32 md:flex items-center">
@@ -10,30 +61,19 @@ const AboutMe = () => {
           {about.data.title}
         </h1>
         <h2 className="text-lg font-semibold pt-5">{about.data.subtitle}</h2>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
+        <p className="leading-7 [&:not(:first-child)]:mt-6 text-base">
           {about.data.paragraph}
         </p>
-        <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-          {about.data.skills.map(
-            (skill: {
-              id: number;
-              name: string;
-              logo: string;
-              size: number;
-            }) => (
-              <li key={skill.id}>
-                {skill.name}
-                {/* // TODO ** will fixed logo soon */}
-                {/* <Image
-                    src={skill.logo}
-                    alt={skill.name}
-                    width={skill.size}
-                    height={skill.size}
-                    className="ml-2 inline-block"
-                  ></Image> */}
-              </li>
-            )
-          )}
+        <ul className="my-4 ml-4 list-disc [&>li]:mt-4 grid grid-cols-12 text-base">
+          {skills.map((skill: { id: number; name: string; icon: any }) => (
+            <li
+              key={skill.id}
+              className="flex list-none gap-x-2 p-0 m-0 col-span-6 "
+            >
+              <div>{skill.icon}</div>
+              <span>{skill.name}</span>
+            </li>
+          ))}
         </ul>
       </div>
       <div className="w-full md:m-0 md:flex md:justify-end mt-20">
