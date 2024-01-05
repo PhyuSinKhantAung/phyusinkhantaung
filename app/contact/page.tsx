@@ -6,7 +6,7 @@ const ContactPage = () => {
   return (
     <>
       <ScrollTop />
-      <Contact />;
+      <Contact />
     </>
   );
 };

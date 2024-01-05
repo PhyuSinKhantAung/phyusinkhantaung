@@ -35,7 +35,7 @@ const Contact = () => {
     send('service_h7ssxov', 'template_keplteb', data, 'nz8rtf2Y9zk38r7GJ')
       .then((response) => {
         toast({
-          description: 'Your email has been sent.',
+          description: '✅  Your email has been sent.',
         });
         setData({
           name: '',
@@ -49,6 +49,7 @@ const Contact = () => {
         setIsLoading(false);
         console.log('failed', error);
         toast({
+          variant: 'destructive',
           description: 'Something went wrong!',
         });
       });
@@ -103,15 +104,15 @@ const Contact = () => {
           <p className="text-lg">
             {`Feel free to reach out and connect! Whether you have a project in
             mind, want to discuss collaboration opportunities, or just want to
-            say hello, you can freely email me at `}
+            say hello, just directly email me at `}
 
             <a
               href="mailto:rollyphyusinkhant7290@gmail.com"
               className=" text-blue-700"
             >
-              mail@phyusin.dev.
+              mail@phyusin.dev
             </a>
-            {`I'm always open to new conversations. Let's
+            {`. I'm always open to new conversations. Let's
               build something amazing together.`}
           </p>
 
