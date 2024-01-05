@@ -1,11 +1,14 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 import { Textarea } from './ui/textarea';
 import SocialsData from '@/data/socials.json';
 import { Facebook, Github, Instagram, Linkedin } from 'lucide-react';
+import { send } from 'emailjs-com';
+import { useToast } from '@/components/ui/use-toast';
+import { Toaster } from './ui/toaster';
 
 interface Social {
   id: string;
@@ -14,8 +17,46 @@ interface Social {
 }
 
 const Contact = () => {
+  const [data, setData] = useState({
+    name: '',
+    message: '',
+    reply_to: '',
+  });
+  const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleChange = (e: any) => {
+    setData({ ...data, [e.target.name]: e.target.value });
+  };
+
+  const onSubmit = (e: any) => {
+    e.preventDefault();
+    setIsLoading(true);
+    send('service_h7ssxov', 'template_keplteb', data, 'nz8rtf2Y9zk38r7GJ')
+      .then((response) => {
+        toast({
+          description: 'Your email has been sent.',
+        });
+        setData({
+          name: '',
+          message: '',
+          reply_to: '',
+        });
+        setIsLoading(false);
+        console.log('success', response.status, response.text);
+      })
+      .catch((error) => {
+        setIsLoading(false);
+        console.log('failed', error);
+        toast({
+          description: 'Something went wrong!',
+        });
+      });
+  };
   return (
     <div className="md:max-w-[80%] mx-auto p-1">
+      <Toaster />
+
       <div className="my-8">
         <TypeAnimation
           sequence={[`Let's get in touch !`, 1000, '', 1000]}
@@ -30,22 +71,48 @@ const Contact = () => {
         />
       </div>
       <div className="md:flex">
-        <form action="" className="md:w-1/2 flex flex-col gap-y-5 ">
-          <Input placeholder="Enter your name" />
-          <Input placeholder="Enter your email" />
-          <Textarea placeholder="Enter your message" />
+        <form onSubmit={onSubmit} className="md:w-1/2 flex flex-col gap-y-5 ">
+          <Input
+            placeholder="Enter your name"
+            type="text"
+            name="name"
+            value={data.name}
+            onChange={handleChange}
+          />
+          <Input
+            type="text"
+            name="reply_to"
+            value={data.reply_to}
+            onChange={handleChange}
+            placeholder="Enter your email"
+          />
+          <Textarea
+            name="message"
+            value={data.message}
+            onChange={handleChange}
+            placeholder="Enter your message"
+          />
           <div>
-            <Button size="sm" variant="retro">
-              Submit
+            <Button size="sm" type="submit" variant="retro">
+              {isLoading ? 'Submitting...' : 'Submit'}
             </Button>
           </div>
         </form>
+
         <div className="md:w-1/2 md:mx-10 py-10 md:py-3 md:pt-0">
           <p className="text-lg">
             {`Feel free to reach out and connect! Whether you have a project in
             mind, want to discuss collaboration opportunities, or just want to
-            say hello, I'm always open to new conversations. Let's build
-            something amazing together.`}
+            say hello, you can freely email me at `}
+
+            <a
+              href="mailto:rollyphyusinkhant7290@gmail.com"
+              className=" text-blue-700"
+            >
+              mail@phyusin.dev.
+            </a>
+            {`I'm always open to new conversations. Let's
+              build something amazing together.`}
           </p>
 
           <ul className="my-10 list-disc [&>li]:mt-2">
