@@ -42,10 +42,10 @@ const Contact = () => {
         </form>
         <div className="md:w-1/2 md:mx-10 py-10 md:py-3 md:pt-0">
           <p className="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-            repudiandae deleniti eos illo in laborum quos totam quam hic
-            temporibus eum modi, autem blanditiis ad magni maiores repellat iste
-            iure!
+            {`Feel free to reach out and connect! Whether you have a project in
+            mind, want to discuss collaboration opportunities, or just want to
+            say hello, I'm always open to new conversations. Let's build
+            something amazing together.`}
           </p>
 
           <ul className="my-10 list-disc [&>li]:mt-2">
