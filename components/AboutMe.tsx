@@ -99,13 +99,13 @@ const AboutMe = () => {
           ))}
         </ul>
       </div>
-      <div className="w-full xl:mt-[-6em] xl:flex xl:justify-end mt-20">
+      <div className="w-full xl:mt-[-10em] xl:flex xl:justify-end mt-20">
         <Image
-          src={'/my-pic.jpg'}
+          src={'/my-picture.jpg'}
           alt="my-picture"
-          className="shadow-[3rem_-3rem_0.2rem_#848484] dark:shadow-[3rem_-3rem_0.2rem_#DBDBDB] mx-auto xl:ml-24"
-          width={450}
-          height={800}
+          className="shadow-[3rem_-3rem_0.2rem_#8F9396] dark:shadow-[3rem_-3rem_0.2rem_#8F9396] mx-auto xl:ml-24"
+          width={500}
+          height={500}
         ></Image>
       </div>
     </div>
