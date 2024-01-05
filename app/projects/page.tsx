@@ -1,11 +1,13 @@
 import React from 'react';
 import Projects from '@/components/Projects';
+import ScrollTop from '@/components/layout/ScrollTop';
 
 const ProjectsPage = () => {
   return (
-    <div>
+    <>
+      <ScrollTop />
       <Projects />
-    </div>
+    </>
   );
 };
 
