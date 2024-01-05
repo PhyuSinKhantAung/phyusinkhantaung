@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import about from '@/data/about.json';
 import Image from 'next/image';
@@ -10,6 +11,7 @@ import {
   SiTypescript,
   SiVite,
 } from 'react-icons/si';
+// import { TypeAnimation } from 'react-type-animation';
 
 const skills = [
   {
@@ -55,8 +57,20 @@ const skills = [
 ];
 const AboutMe = () => {
   return (
-    <div className="md:max-w-[80%] mx-auto p-2 my-5 md:my-20 md:flex items-center">
+    <div className="xl:max-w-[80%] mx-auto p-2 my-5  md:p-10 xl:my-20 xl:flex items-center">
       <div className=" w-full ">
+        {/* <TypeAnimation
+          sequence={[`🚀 Welcome to my Digital Playground !`]}
+          wrapper="span"
+          speed={5}
+          style={{
+            fontSize: '4em',
+            display: 'inline-block',
+            fontWeight: 700,
+            margin: '2rem 0 2rem',
+            lineHeight: 1,
+          }}
+        /> */}
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
           {about.data.title}
         </h1>
@@ -85,12 +99,12 @@ const AboutMe = () => {
           ))}
         </ul>
       </div>
-      <div className="w-full md:m-0 md:flex md:justify-end mt-20">
+      <div className="w-full xl:mt-[-6em] xl:flex xl:justify-end mt-20">
         <Image
           src={'/my-pic.jpg'}
           alt="my-picture"
-          className="shadow-[3rem_-3rem_0.2rem_#848484] dark:shadow-[3rem_-3rem_0.2rem_#DBDBDB] mx-auto md:ml-24"
-          width={500}
+          className="shadow-[3rem_-3rem_0.2rem_#848484] dark:shadow-[3rem_-3rem_0.2rem_#DBDBDB] mx-auto xl:ml-24"
+          width={450}
           height={800}
         ></Image>
       </div>

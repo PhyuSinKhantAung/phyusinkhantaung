@@ -3,58 +3,161 @@
     {
       "id": "1",
       "title": "Social Media App",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, earum",
+      "description": "This is my first experienced fullstack app with the using of MERN technologies.Users can do social-media features like posting, liking, commenting, sharing and saving posts. And also users can connect friends and unfriend.  ",
       "repo_link": "https://github.com/PhyuSinKhantAung/social-media-app",
       "demo_link": "https://github.com/PhyuSinKhantAung/social-media-app",
-      "image": "/projects/keep-notes-light-mode.png"
+      "image": "/projects/keep-notes-light-mode.png",
+      "used_technologies": [
+        {
+          "id": "1",
+          "name": "React"
+        },
+        {
+          "id": "2",
+          "name": "Mui"
+        },
+        {
+          "id": "3",
+          "name": "Nodejs"
+        },
+        {
+          "id": "4",
+          "name": "Mongodb"
+        }
+      ]
     },
     {
       "id": "1",
       "title": "Keep Notes",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, earum",
+      "description": "I used nextjs 14 feature, server actions, to develop next full stack crud app. This is serverless fullstack app with mongodb.",
       "repo_link": "https://github.com/PhyuSinKhantAung/keep-notes",
       "demo_link": "https://keep-notes-six.vercel.app/notes",
-      "image": "/projects/keep-notes.png"
+      "image": "/projects/keep-notes.png",
+      "used_technologies": [
+        {
+          "id": "1",
+          "name": "Next"
+        },
+        {
+          "id": "2",
+          "name": "Shadcn"
+        },
+        {
+          "id": "3",
+          "name": "Tailwindcss"
+        },
+        {
+          "id": "4",
+          "name": "Mongodb"
+        }
+      ]
     },
     {
       "id": "1",
       "title": "Seo Master Landing Page",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, earum",
+      "description": "This is my frontend-practised project. Simply project with the using of nextjs to be good at seo and I rendered data with nextjs static rending method. I added animation with framer-motion library.",
       "repo_link": "https://github.com/PhyuSinKhantAung/seo-master",
       "demo_link": "https://seo-master.vercel.app",
-      "image": "/projects/seo-master.png"
+      "image": "/projects/seo-master.png",
+      "used_technologies": [
+        {
+          "id": "1",
+          "name": "Next"
+        },
+        {
+          "id": "2",
+          "name": "Tailwindcss"
+        },
+        {
+          "id": "3",
+          "name": "Framer-motion"
+        }
+      ]
     },
     {
       "id": "2",
       "title": "React ToDO",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, earum",
-      "repo_link": "https://to-do-list-teal-psi.vercel.app",
-      "demo_link": "https://github.com/PhyuSinKhantAung/to-do-list",
-      "image": "/projects/react-toDO.png"
+      "description": "This is react practised app, just a todo app. I used localstorage to store user's data",
+      "repo_link": "https://github.com/PhyuSinKhantAung/to-do-list",
+      "demo_link": "https://to-do-list-teal-psi.vercel.app",
+      "image": "/projects/react-toDO.png",
+      "used_technologies": [
+        {
+          "id": "1",
+          "name": "React"
+        },
+        {
+          "id": "2",
+          "name": "Tailwindcss"
+        }
+      ]
     },
+
     {
       "id": "3",
-      "title": "Pig Game",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, earum",
-      "repo_link": "https://generate-the-dice.vercel.app",
-      "demo_link": "'https://github.com/PhyuSinKhantAung/generate-the-dice",
-      "image": "/projects/pig-game.png"
+      "title": "Exchange Calculator",
+      "description": "Currency exchange calculator and user can save his or her exchange data as a history.",
+      "repo_link": "https://github.com/PhyuSinKhantAung/exchange-currency",
+      "demo_link": "https://exchange-currency-three.vercel.app",
+      "image": "/projects/exchange-calculator.png",
+      "used_technologies": [
+        {
+          "id": "1",
+          "name": "Html"
+        },
+        {
+          "id": "2",
+          "name": "Css"
+        },
+        {
+          "id": "3",
+          "name": "Javascript"
+        }
+      ]
     },
     {
       "id": "4",
       "title": "Guessing Number",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, earum",
+      "description": "Guessing computer's number with the hints of getting high or low.",
       "repo_link": "https://github.com/PhyuSinKhantAung/guess-my-number",
       "demo_link": "https://guess-my-number-cyan.vercel.app",
-      "image": "/projects/guessing-number.png"
+      "image": "/projects/guessing-number.png",
+      "used_technologies": [
+        {
+          "id": "1",
+          "name": "Html"
+        },
+        {
+          "id": "2",
+          "name": "Css"
+        },
+        {
+          "id": "3",
+          "name": "Javascript"
+        }
+      ]
     },
     {
       "id": "5",
-      "title": "Exchange Calculator",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, earum",
-      "repo_link": "https://github.com/PhyuSinKhantAung/exchange-currency",
-      "demo_link": "https://exchange-currency-three.vercel.app",
-      "image": "/projects/exchange-calculator.png"
+      "title": "Pig Game",
+      "description": "This game will have to participate two users. Player 1 had to dice repeatedly and the result he got will be added with the old ones. But once he got the result one he will lose his all results. And the player two's turn will be.",
+      "repo_link": "https://github.com/PhyuSinKhantAung/generate-the-dice",
+      "demo_link": "https://generate-the-dice.vercel.app",
+      "image": "/projects/pig-game.png",
+      "used_technologies": [
+        {
+          "id": "1",
+          "name": "Html"
+        },
+        {
+          "id": "2",
+          "name": "Css"
+        },
+        {
+          "id": "3",
+          "name": "Javascript"
+        }
+      ]
     }
   ]
 }
