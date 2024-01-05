@@ -40,7 +40,7 @@ const Projects = () => {
             fontSize: '1.9em',
             display: 'inline-block',
             fontWeight: 700,
-            margin: '2rem 0 2rem',
+            margin: '1rem 0 1rem',
           }}
           repeat={Infinity}
         />

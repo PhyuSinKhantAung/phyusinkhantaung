@@ -15,7 +15,7 @@ interface Social {
 
 const Contact = () => {
   return (
-    <div className="md:max-w-[80%] mx-auto p-2 my-5">
+    <div className="md:max-w-[80%] mx-auto p-1">
       <div className="my-8">
         <TypeAnimation
           sequence={[`Let's get in touch !`, 1000, '', 1000]}

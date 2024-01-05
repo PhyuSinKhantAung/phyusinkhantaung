@@ -57,7 +57,7 @@ const skills = [
 ];
 const AboutMe = () => {
   return (
-    <div className="xl:max-w-[80%] mx-auto p-2 my-5  md:p-10 xl:my-20 xl:flex items-center">
+    <div className="xl:max-w-[80%] mx-auto p-2 my-5 md:p-5 xl:my-10 xl:flex items-center">
       <div className=" w-full ">
         {/* <TypeAnimation
           sequence={[`🚀 Welcome to my Digital Playground !`]}
