@@ -11,6 +11,8 @@ import {
   SiTypescript,
   SiVite,
 } from 'react-icons/si';
+import { motion } from 'framer-motion';
+import { globalVariants } from '@/animation';
 // import { TypeAnimation } from 'react-type-animation';
 
 const skills = [
@@ -57,7 +59,10 @@ const skills = [
 ];
 const AboutMe = () => {
   return (
-    <div className="xl:max-w-[80%] mx-auto p-2 my-5 md:p-5 xl:my-10 xl:flex items-center">
+    <motion.div
+      variants={globalVariants.containerVariants}
+      className="xl:max-w-[80%] mx-auto p-2 my-5 md:p-5 xl:my-10 xl:flex items-center"
+    >
       <div className=" w-full ">
         {/* <TypeAnimation
           sequence={[`🚀 Welcome to my Digital Playground !`]}
@@ -71,9 +76,12 @@ const AboutMe = () => {
             lineHeight: 1,
           }}
         /> */}
-        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+        <motion.h1
+          variants={globalVariants.fadeZoomInVariants}
+          className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl"
+        >
           {about.data.title}
-        </h1>
+        </motion.h1>
         <h2 className="text-lg font-semibold pt-5">{about.data.subtitle}</h2>
         <p className="leading-7 [&:not(:first-child)]:mt-6 text-base">
           {about.data.paragraph}
@@ -108,7 +116,7 @@ const AboutMe = () => {
           height={500}
         ></Image>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
