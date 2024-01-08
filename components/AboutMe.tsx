@@ -11,9 +11,8 @@ import {
   SiTypescript,
   SiVite,
 } from 'react-icons/si';
-import { motion } from 'framer-motion';
 import { globalVariants } from '@/animation';
-// import { TypeAnimation } from 'react-type-animation';
+import { motion } from 'framer-motion';
 
 const skills = [
   {
@@ -61,41 +60,49 @@ const AboutMe = () => {
   return (
     <motion.div
       variants={globalVariants.containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
       className="xl:max-w-[80%] mx-auto p-2 my-5 md:p-5 xl:my-10 xl:flex items-center"
     >
       <div className=" w-full ">
-        {/* <TypeAnimation
-          sequence={[`🚀 Welcome to my Digital Playground !`]}
-          wrapper="span"
-          speed={5}
-          style={{
-            fontSize: '4em',
-            display: 'inline-block',
-            fontWeight: 700,
-            margin: '2rem 0 2rem',
-            lineHeight: 1,
-          }}
-        /> */}
         <motion.h1
-          variants={globalVariants.fadeZoomInVariants}
+          variants={globalVariants.leftComeInVariants}
           className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl"
         >
           {about.data.title}
         </motion.h1>
-        <h2 className="text-lg font-semibold pt-5">{about.data.subtitle}</h2>
-        <p className="leading-7 [&:not(:first-child)]:mt-6 text-base">
+        <motion.h2
+          variants={globalVariants.leftComeInVariants}
+          className="text-lg font-semibold pt-5"
+        >
+          {about.data.subtitle}
+        </motion.h2>
+        <motion.p
+          variants={globalVariants.scrollUpVariants}
+          className="leading-7 [&:not(:first-child)]:mt-6 text-base"
+        >
           {about.data.paragraph}
-        </p>
+        </motion.p>
 
-        <p className="leading-7 [&:not(:first-child)]:mt-6 text-base">
+        <motion.p
+          variants={globalVariants.scrollUpVariants}
+          className="leading-7 [&:not(:first-child)]:mt-6 text-base"
+        >
           {about.data.paragraph_2}
-        </p>
+        </motion.p>
 
-        <p className="text-lg [&:not(:first-child)]:mt-6  font-semibold">
+        <motion.p
+          variants={globalVariants.scrollUpVariants}
+          className="text-lg [&:not(:first-child)]:mt-6  font-semibold"
+        >
           {about.data.paragraph_3}
-        </p>
+        </motion.p>
 
-        <ul className="my-4 ml-4 list-disc [&>li]:mt-4 grid grid-cols-12 text-base">
+        <motion.ul
+          variants={globalVariants.scrollUpVariants}
+          className="my-4 ml-4 list-disc [&>li]:mt-4 grid grid-cols-12 text-base"
+        >
           {skills.map((skill: { id: number; name: string; icon: any }) => (
             <li
               key={skill.id}
@@ -105,7 +112,7 @@ const AboutMe = () => {
               <span>{skill.name}</span>
             </li>
           ))}
-        </ul>
+        </motion.ul>
       </div>
       <div className="w-full xl:mt-[-10em] xl:flex xl:justify-end mt-20">
         <Image
