@@ -9,6 +9,8 @@ import { Facebook, Github, Instagram, Linkedin } from 'lucide-react';
 import { send } from 'emailjs-com';
 import { useToast } from '@/components/ui/use-toast';
 import { Toaster } from './ui/toaster';
+import { motion } from 'framer-motion';
+import { globalVariants } from '@/animation';
 
 interface Social {
   id: string;
@@ -55,10 +57,16 @@ const Contact = () => {
       });
   };
   return (
-    <div className="md:max-w-[80%] mx-auto p-1">
+    <motion.div
+      variants={globalVariants.containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="md:max-w-[80%] mx-auto p-1"
+    >
       <Toaster />
 
-      <div className="my-8">
+      <div className="mb-8 mt-4 lg:my-8">
         <TypeAnimation
           sequence={[`Let's get in touch !`, 1000, '', 1000]}
           wrapper="span"
@@ -67,6 +75,7 @@ const Contact = () => {
             fontSize: '3em',
             display: 'inline-block',
             fontWeight: 700,
+            transition: 'ease-in',
           }}
           repeat={Infinity}
         />
@@ -79,6 +88,7 @@ const Contact = () => {
             name="name"
             value={data.name}
             onChange={handleChange}
+            required={true}
           />
           <Input
             type="text"
@@ -86,12 +96,14 @@ const Contact = () => {
             value={data.reply_to}
             onChange={handleChange}
             placeholder="Enter your email"
+            required={true}
           />
           <Textarea
             name="message"
             value={data.message}
             onChange={handleChange}
             placeholder="Enter your message"
+            required={true}
           />
           <div>
             <Button size="sm" type="submit" variant="retro">
@@ -137,7 +149,7 @@ const Contact = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

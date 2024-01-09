@@ -12,7 +12,8 @@ import Image from 'next/image';
 import { Button } from './ui/button';
 import ProjectsData from '@/data/projects.json';
 import { Badge } from '@/components/ui/badge';
-import { TypeAnimation } from 'react-type-animation';
+import { motion } from 'framer-motion';
+import { globalVariants } from '@/animation';
 
 interface Project {
   id: string;
@@ -30,23 +31,17 @@ interface UsedTechnology {
 
 const Projects = () => {
   return (
-    <div>
-      <div className="flex justify-center items-center">
-        <TypeAnimation
-          sequence={[`The projects I've developed. `, 1000, '', 1000]}
-          wrapper="span"
-          speed={20}
-          style={{
-            fontSize: '1.9em',
-            display: 'inline-block',
-            fontWeight: 700,
-            margin: '1rem 0 1rem',
-          }}
-          repeat={Infinity}
-        />
-      </div>
+    <motion.div
+      variants={globalVariants.containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
       <div className="md:max-w-[80%] mx-auto p-2 mb-5 md:flex items-center">
-        <div className="grid xl:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-10 mx-auto p-4">
+        <motion.div
+          variants={globalVariants.fadeInVariants}
+          className="grid xl:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-10 mx-auto p-4"
+        >
           {ProjectsData.data.map((project: Project) => (
             <Card
               key={project.id}
@@ -96,9 +91,9 @@ const Projects = () => {
               </CardFooter>
             </Card>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

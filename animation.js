@@ -12,6 +12,19 @@ const globalVariants = {
         },
 
     },
+    fadeInVariants: {
+        hidden: {
+            opacity: 0,
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                duration: 1,
+                type: 'easeIn   ',
+                stiffness: 20
+            }
+        },
+    },
 
     scrollUpVariants: {
         hidden: {
