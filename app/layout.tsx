@@ -4,6 +4,7 @@ import { Alegreya } from 'next/font/google';
 import NavData from '@/data/nav.json';
 import Navbar from '@/components/layout/Navbar';
 import { ThemeProvider } from '@/components/layout/ThemeProvider';
+import ContentLayout from '@/components/layout/ContentLayout';
 
 const alegreya = Alegreya({
   subsets: ['latin'],
@@ -30,7 +31,7 @@ export default function RootLayout({
         >
           <Navbar navData={NavData.data} />
 
-          {children}
+          <ContentLayout>{children}</ContentLayout>
         </ThemeProvider>
         <footer>
           <hr />
