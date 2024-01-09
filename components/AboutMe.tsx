@@ -68,7 +68,7 @@ const AboutMe = () => {
       <div className=" w-full ">
         <motion.h1
           variants={globalVariants.leftComeInVariants}
-          className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl"
+          className="scroll-m-20 sm:text-3xl text-[2.6rem] leading-[2.6rem] font-extrabold tracking-tight lg:text-4xl"
         >
           {about.data.title}
         </motion.h1>

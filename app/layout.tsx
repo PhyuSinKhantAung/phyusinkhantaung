@@ -35,7 +35,7 @@ export default function RootLayout({
         </ThemeProvider>
         <footer>
           <hr />
-          <span className="text-muted-foreground flex justify-center items-center h-40">
+          <span className="text-muted-foreground flex justify-center items-center py-6">
             Made by Phyu Sin © 2023
           </span>
         </footer>

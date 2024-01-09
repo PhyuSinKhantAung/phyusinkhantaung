@@ -3,7 +3,6 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Code2 } from 'lucide-react';
-import { Switch } from '@/components/ui/switch';
 import { useTheme } from 'next-themes';
 import { motion } from 'framer-motion';
 
@@ -49,18 +48,41 @@ export default function Navbar({ navData }: { navData: Array<NavItem> }) {
           ))}
         </ul>
 
-        <Switch
-          onClick={() => {
-            if (theme === 'light') {
-              return setTheme('dark');
-            } else return setTheme('light');
-          }}
-        />
-
-        <div className="flex items-center cursor-pointer relative">
-          <input type="checkbox" className="opacity-0 w-0 h-0" />
-          <span className="box-border rounded-md border-2 border-solid dark:border-[#c8cace] border-black shadow-[6px_6px_#2d323d] dark:shadow-[6px_6px_#c8cace] absolute top-0 left-0 right-0 bottom-0 cursor-pointer "></span>
-        </div>
+        <label className="switch">
+          <input
+            onClick={() => {
+              if (theme === 'light') {
+                return setTheme('dark');
+              } else return setTheme('light');
+            }}
+            type="checkbox"
+            className="toggle hidden"
+          />
+          <span
+            className='
+          slider box-border
+          bg-background
+         dark:shadow-[4px_4px_#c8cace]
+          before:bg-background
+           border-black
+           dark:border-[#c8cace]
+           dark:border-#c8cace
+            shadow-[4px_4px_#2d323d]
+             absolute cursor-pointer
+               transition-[0.3s]
+               rounded-[5px] border-2 border-solid
+               inset-0 before:box-border before:absolute
+               before:content-[""] before:h-5 before:w-5
+                before:border-black 
+                before:dark:border-[#c8cace]
+                before:shadow-[0_3px_0_#2d323d]
+                before:dark:shadow-[0_3px_0_#c8cace]
+                 before:transition-[0.3s]
+                  before:rounded-[5px] before:border-2
+                   before:border-solid before:-left-0.5
+                    before:bottom-0.5'
+          ></span>
+        </label>
       </motion.nav>
     </div>
   );

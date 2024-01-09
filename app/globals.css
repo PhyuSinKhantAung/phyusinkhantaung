@@ -73,4 +73,19 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .switch {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 50px;
+    height: 20px;
+  }
+
+  .toggle:checked + .slider:before {
+    transform: translateX(30px);
+  }
 }
