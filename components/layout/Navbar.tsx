@@ -62,12 +62,12 @@ export default function Navbar({ navData }: { navData: Array<NavItem> }) {
             className='
           slider box-border
           bg-background
-         dark:shadow-[4px_4px_#c8cace]
+         dark:shadow-[2px_2px_#c8cace]
           before:bg-background
            border-black
            dark:border-[#c8cace]
            dark:border-#c8cace
-            shadow-[4px_4px_#2d323d]
+            shadow-[2px_2px_#2d323d]
              absolute cursor-pointer
                transition-[0.3s]
                rounded-[5px] border-2 border-solid
@@ -75,8 +75,8 @@ export default function Navbar({ navData }: { navData: Array<NavItem> }) {
                before:content-[""] before:h-5 before:w-5
                 before:border-black 
                 before:dark:border-[#c8cace]
-                before:shadow-[0_3px_0_#2d323d]
-                before:dark:shadow-[0_3px_0_#c8cace]
+                before:shadow-[0_1px_0_#2d323d]
+                before:dark:shadow-[0_1px_0_#c8cace]
                  before:transition-[0.3s]
                   before:rounded-[5px] before:border-2
                    before:border-solid before:-left-0.5
