@@ -1,18 +1,18 @@
-import type { Metadata } from 'next';
-import './globals.css';
-import { Alegreya } from 'next/font/google';
-import NavData from '@/data/nav.json';
-import Navbar from '@/components/layout/Navbar';
-import { ThemeProvider } from '@/components/layout/ThemeProvider';
-import ContentLayout from '@/components/layout/ContentLayout';
+import type { Metadata } from "next";
+import "./globals.css";
+import { Alegreya } from "next/font/google";
+import NavData from "@/data/nav.json";
+import Navbar from "@/components/layout/Navbar";
+import { ThemeProvider } from "@/components/layout/ThemeProvider";
+import ContentLayout from "@/components/layout/ContentLayout";
 
 const alegreya = Alegreya({
-  subsets: ['latin'],
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: 'My Portfolio',
-  description: 'This site will show about me.',
+  title: "My Portfolio",
+  description: "This site will show about me.",
 };
 
 export default function RootLayout({
@@ -35,7 +35,7 @@ export default function RootLayout({
         </ThemeProvider>
         <footer>
           <hr />
-          <span className="text-muted-foreground flex justify-center items-center py-6">
+          <span className="flex items-center justify-center py-6 text-muted-foreground">
             Made by Phyu Sin © 2023
           </span>
         </footer>

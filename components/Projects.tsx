@@ -1,5 +1,5 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 import {
   Card,
   CardContent,
@@ -7,13 +7,13 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card';
-import Image from 'next/image';
-import { Button } from './ui/button';
-import ProjectsData from '@/data/projects.json';
-import { Badge } from '@/components/ui/badge';
-import { motion } from 'framer-motion';
-import { globalVariants } from '@/animation';
+} from "@/components/ui/card";
+import Image from "next/image";
+import { Button } from "./ui/button";
+import ProjectsData from "@/data/projects.json";
+import { Badge } from "@/components/ui/badge";
+import { motion } from "framer-motion";
+import { globalVariants } from "@/animation";
 
 interface Project {
   id: string;
@@ -37,19 +37,19 @@ const Projects = () => {
       whileInView="visible"
       viewport={{ once: true }}
     >
-      <div className="md:max-w-[80%] mx-auto p-2 mb-5 md:flex items-center">
+      <div className="mx-auto mb-5 items-center p-2 md:flex md:max-w-[80%]">
         <motion.div
           variants={globalVariants.fadeInVariants}
-          className="grid xl:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-10 mx-auto p-4"
+          className="mx-auto grid grid-cols-2 gap-10 p-4 md:grid-cols-4 xl:grid-cols-6"
         >
           {ProjectsData.data.map((project: Project) => (
             <Card
               key={project.id}
-              className="w-full lg:w-80 md:w-72 md:col-span-2 col-span-full
-             border-2 border-solid border-black dark:border-[#c8cace]
-             shadow-[6px_6px_#2d323d] dark:shadow-[6px_6px_#c8cace]"
+              className="col-span-full w-full border-2 border-solid border-black
+             shadow-[6px_6px_#2d323d] md:col-span-2 md:w-72 lg:w-80
+             dark:border-[#c8cace] dark:shadow-[6px_6px_#c8cace]"
             >
-              <CardHeader className="p-0 m-0 mb-4">
+              <CardHeader className="m-0 mb-4 p-0">
                 <Image
                   src={project.image}
                   alt="test"
@@ -70,13 +70,13 @@ const Projects = () => {
                 ))}
               </CardContent>
 
-              <CardContent className="text-center px-2">
+              <CardContent className="px-2 text-center">
                 <CardDescription className="mt-2">
                   {project.description}
                 </CardDescription>
               </CardContent>
               <CardFooter>
-                <div className="flex gap-x-4 justify-center items-center mx-auto">
+                <div className="mx-auto flex items-center justify-center gap-x-4">
                   <Button variant="retro" size="sm">
                     <a href={project.repo_link} target="_blank">
                       Github
