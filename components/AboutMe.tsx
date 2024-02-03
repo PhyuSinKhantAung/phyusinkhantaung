@@ -116,11 +116,11 @@ const AboutMe = () => {
       </div>
       <div className="mt-20 w-full xl:mt-[-10em] xl:flex xl:justify-end">
         <Image
-          src={"/my-picture.jpg"}
-          alt="my-picture"
+          src={"/my-photo.jpg"}
+          alt="my-photo"
           className="mx-auto shadow-[3rem_-3rem_0.2rem_#8F9396] xl:ml-24 dark:shadow-[3rem_-3rem_0.2rem_#8F9396]"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
         ></Image>
       </div>
     </motion.div>
