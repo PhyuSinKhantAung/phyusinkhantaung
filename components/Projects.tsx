@@ -21,6 +21,7 @@ interface Project {
   description: string;
   repo_link: string;
   demo_link: string;
+  download_link?: string;
   image: string;
   used_technologies: Array<UsedTechnology>;
 }

@@ -27,7 +27,7 @@
       ]
     },
     {
-      "id": "1",
+      "id": "2",
       "title": "Keep Notes",
       "description": "I used nextjs 14 feature, server actions, to develop next full stack crud app. This is serverless fullstack app with mongodb.",
       "repo_link": "https://github.com/PhyuSinKhantAung/keep-notes",
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "id": "1",
+      "id": "3",
       "title": "Seo Master Landing Page",
       "description": "This is my frontend-practised project. Simply project with the using of nextjs to be good at seo and I rendered data with nextjs static rending method. I added animation with framer-motion library.",
       "repo_link": "https://github.com/PhyuSinKhantAung/seo-master",
@@ -75,7 +75,7 @@
       ]
     },
     {
-      "id": "2",
+      "id": "4",
       "title": "React ToDO",
       "description": "This is react practised app, just a todo app. I used localstorage to store user's data",
       "repo_link": "https://github.com/PhyuSinKhantAung/to-do-list",
@@ -94,7 +94,7 @@
     },
 
     {
-      "id": "3",
+      "id": "5",
       "title": "Exchange Calculator",
       "description": "Currency exchange calculator and user can save his or her exchange data as a history.",
       "repo_link": "https://github.com/PhyuSinKhantAung/exchange-currency",
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "id": "4",
+      "id": "6",
       "title": "Guessing Number",
       "description": "Guessing computer's number with the hints of getting high or low.",
       "repo_link": "https://github.com/PhyuSinKhantAung/guess-my-number",
@@ -138,7 +138,7 @@
       ]
     },
     {
-      "id": "5",
+      "id": "7",
       "title": "Pig Game",
       "description": "This game will have to participate two users. Player 1 had to dice repeatedly and the result he got will be added with the old ones. But once he got the result one he will lose his all results. And the player two's turn will be.",
       "repo_link": "https://github.com/PhyuSinKhantAung/generate-the-dice",
@@ -156,6 +156,28 @@
         {
           "id": "3",
           "name": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Movie Ticket Booking Api",
+      "description": "Online booking ticket api using Express, Nodejs, Mongodb with typescript. User can book online ticket from different kind of cinemas. Admins from cinemas can be assigned to do operations.",
+      "repo_link": "https://github.com/PhyuSinKhantAung/movie-ticket-booking-system",
+      "demo_link": "https://github.com/PhyuSinKhantAung/movie-ticket-booking-system/archive/refs/heads/main.zip",
+      "image": "/projects/movie-ticket-booking.jpg",
+      "used_technologies": [
+        {
+          "id": "1",
+          "name": "Express"
+        },
+        {
+          "id": "2",
+          "name": "Nodejs"
+        },
+        {
+          "id": "3",
+          "name": "Mongodb"
         }
       ]
     }
