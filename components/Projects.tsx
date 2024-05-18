@@ -43,7 +43,7 @@ const Projects = () => {
                   alt="test"
                   width={400}
                   height={400}
-                  className="h-44 w-full rounded-t-md object-cover"
+                  className="w-full rounded-t-md "
                 ></Image>
               </div>
 

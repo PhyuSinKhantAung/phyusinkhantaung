@@ -6,7 +6,7 @@
       "description": "A full-stack snack ordering app using Next.js and Prisma with PostgreSQL, featuring cart functionality and user authentication.",
       "repo_link": "https://github.com/PhyuSinKhantAung/cravings-store",
       "demo_link": "https://documenter.getpostman.com/view/24389707/2s9YkrcfWX",
-      "image": "/projects/keep-notes.png",
+      "image": "/projects/cravings-store.png",
       "used_technologies": [
         {
           "id": "1",
@@ -80,7 +80,7 @@
       "description": "A backend API for a learning platform built with NestJS framework supporting course enrollment, lesson management, and teacher/admin roles.",
       "repo_link": "https://github.com/PhyuSinKhantAung/to-do-list",
       "demo_link": "https://to-do-list-teal-psi.vercel.app",
-      "image": "/projects/react-toDO.png",
+      "image": "/projects/learn-hub.jpg",
       "used_technologies": [
         {
           "id": "1",
@@ -99,7 +99,7 @@
       "description": "A Next.js frontend application for exploring cocktails, allowing users to search for and view detailed information about various cocktails.",
       "repo_link": "https://github.com/PhyuSinKhantAung/exchange-currency",
       "demo_link": "https://exchange-currency-three.vercel.app",
-      "image": "/projects/react-toDO.png",
+      "image": "/projects/cocktails.png",
       "used_technologies": [
         {
           "id": "1",
@@ -117,26 +117,29 @@
     },
     {
       "id": "6",
-      "title": "Guessing Number",
-      "description": "A number guessing game built with vanilla JavaScript where users guess the computer's secret number with provided hints.",
-      "repo_link": "https://github.com/PhyuSinKhantAung/guess-my-number",
-      "demo_link": "https://guess-my-number-cyan.vercel.app",
-      "image": "/projects/react-toDO.png",
+      "title": "Movie Ticket Booking Api",
+      "description": "An API for a movie ticket booking system where users can book tickets for specific showtimes. Admins manage bookings, adjust schedules.",
+      "repo_link": "https://github.com/PhyuSinKhantAung/movie-ticket-booking-system",
+      "demo_link": "https://github.com/PhyuSinKhantAung/movie-ticket-booking-system/archive/refs/heads/main.zip",
+      "image": "/projects/movie-ticket-booking-system.jpg",
       "used_technologies": [
         {
           "id": "1",
-          "name": "Html"
+          "name": "Express"
         },
         {
           "id": "2",
-          "name": "Css"
+          "name": "Nodejs"
         },
         {
           "id": "3",
-          "name": "Javascript"
+          "name": "Mongodb"
         }
       ]
-    },
+    }
+  ],
+
+  "extra": [
     {
       "id": "7",
       "title": "Pig Game",
@@ -161,23 +164,23 @@
     },
     {
       "id": "8",
-      "title": "Movie Ticket Booking Api",
-      "description": "An API for a movie ticket booking system where users can book tickets for specific showtimes. Admins manage bookings, adjust schedules.",
-      "repo_link": "https://github.com/PhyuSinKhantAung/movie-ticket-booking-system",
-      "demo_link": "https://github.com/PhyuSinKhantAung/movie-ticket-booking-system/archive/refs/heads/main.zip",
-      "image": "/projects/movie-ticket-booking.jpg",
+      "title": "Guessing Number",
+      "description": "A number guessing game built with vanilla JavaScript where users guess the computer's secret number with provided hints.",
+      "repo_link": "https://github.com/PhyuSinKhantAung/guess-my-number",
+      "demo_link": "https://guess-my-number-cyan.vercel.app",
+      "image": "/projects/guessing-number.png",
       "used_technologies": [
         {
           "id": "1",
-          "name": "Express"
+          "name": "Html"
         },
         {
           "id": "2",
-          "name": "Nodejs"
+          "name": "Css"
         },
         {
           "id": "3",
-          "name": "Mongodb"
+          "name": "Javascript"
         }
       ]
     }
