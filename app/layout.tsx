@@ -4,15 +4,18 @@ import { Alegreya } from "next/font/google";
 import NavData from "@/data/nav.json";
 import Navbar from "@/components/layout/Navbar";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
-import ContentLayout from "@/components/layout/ContentLayout";
 
 const alegreya = Alegreya({
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "This site will show about me.",
+  title: "Phyu Sin Khant Aung | Software Engineer",
+  description:
+    "Welcome to my portfolio! I am a passionate full-stack web developer specializing in building responsive and visually appealing web applications. Explore my projects, which showcase my expertise in Node.js, Javascript, Typescript, and other cutting-edge technologies. Let's connect and bring your ideas to life!",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
