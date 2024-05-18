@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Code2 } from "lucide-react";
-import { motion } from "framer-motion";
 import { Button } from "../ui/button";
 import DarkModeSwitch from "../ui/ToggleSwitch/dark-mode-switch";
 import { cn } from "@/lib/utils";
