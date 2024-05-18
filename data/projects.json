@@ -3,48 +3,123 @@
     {
       "id": "1",
       "title": "Cravings Store",
+      "intro": "Welcome to Craving Store, your go-to ecommerce platform for ordering snacks and food items online! Built with Next.js as a full-stack application using app router, Craving Store provides a seamless browsing and ordering experience for end-users.",
       "description": "A full-stack snack ordering app using Next.js and Prisma with PostgreSQL, featuring cart functionality and user authentication.",
       "repo_link": "https://github.com/PhyuSinKhantAung/cravings-store",
-      "demo_link": "https://documenter.getpostman.com/view/24389707/2s9YkrcfWX",
+      "demo_link": "https://cravings-store.vercel.app",
+      "api_doc_link": null,
       "image": "/projects/cravings-store.png",
-      "used_technologies": [
+      "details_image": "/projects/details-cravings-store.jpg",
+      "features": [
         {
           "id": "1",
-          "name": "React"
+          "name": "Next.js Application",
+          "description": "Craving Store is developed as a full-stack application using Next.js, providing server-side rendering and a delightful user experience."
         },
         {
           "id": "2",
-          "name": "Mui"
+          "name": "PostgreSQL Database",
+          "description": "The application utilizes PostgreSQL as its database system for storing product information, user data, and orders."
         },
         {
           "id": "3",
-          "name": "Nodejs"
+          "name": "Prisma ORM",
+          "description": "Prisma serves as the ORM (Object-Relational Mapping) tool for interacting with the PostgreSQL database, simplifying data access and manipulation."
         },
         {
           "id": "4",
-          "name": "Mongodb"
+          "name": "NextAuth",
+          "description": "User authentication is handled with NextAuth, allowing users to securely log in using various authentication providers."
+        },
+        {
+          "id": "5",
+          "name": "Menu Exploration",
+          "description": "Users can view and explore the available menus, browsing through the wide selection of snacks and food items."
+        },
+        {
+          "id": "6",
+          "name": "Add to Cart",
+          "description": "Even before logging in, users can add items to their cart, making it convenient to prepare their order ahead of time."
+        },
+        {
+          "id": "7",
+          "name": "Order Management",
+          "description": "After logging in, users can proceed with their orders, view their order history, and track the status of their current orders on the order page."
+        }
+      ],
+      "used_technologies": [
+        {
+          "id": "1",
+          "name": "Nextjs-14"
+        },
+        {
+          "id": "2",
+          "name": "Daisyui"
+        },
+        {
+          "id": "3",
+          "name": "Postgresql"
+        },
+        {
+          "id": "4",
+          "name": "Prisma"
         }
       ]
     },
     {
       "id": "2",
       "title": "Social Media App",
+      "intro": "Welcome to the repository for the Social Media App. This repository contains both the backend API and frontend components of the application. The backend is responsible for handling data storage, user authentication, and API endpoints, while the frontend provides the user interface for interacting with the application.",
       "description": "A dynamic social media application built using the MERN stack for real-time communication, user interactions, and personalized content sharing.",
-      "repo_link": "https://github.com/PhyuSinKhantAung/keep-notes",
-      "demo_link": "https://keep-notes-six.vercel.app/notes",
+      "repo_link": "https://github.com/PhyuSinKhantAung/social-media-app",
+      "demo_link": null,
+      "api_doc_link": "https://documenter.getpostman.com/view/24389707/2s9YkrcfWX",
       "image": "/projects/social-media-site.jpg",
-      "used_technologies": [
+      "details_image": "/projects/details-social-media-site.jpg",
+      "features": [
         {
           "id": "1",
-          "name": "Next"
+          "name": "User Authentication",
+          "description": "Enables users to sign up or log in using their email and password, with authentication handled via JWT tokens."
         },
         {
           "id": "2",
-          "name": "Shadcn"
+          "name": "Post Management",
+          "description": "Provides functionality for users to create, like, unlike, comment on, and save posts."
         },
         {
           "id": "3",
-          "name": "Tailwindcss"
+          "name": "Friend Management",
+          "description": "Allows users to add friends, unfriend other users, and block users."
+        },
+        {
+          "id": "4",
+          "name": "Tagging",
+          "description": "Enables users to tag other users in their posts."
+        },
+        {
+          "id": "5",
+          "name": "Image Upload",
+          "description": "Supports uploading multiple images or a single image to users' feeds."
+        },
+        {
+          "id": "6",
+          "name": "Personalized Feeds",
+          "description": "Provides users with personalized feeds based on their interactions and connections."
+        }
+      ],
+      "used_technologies": [
+        {
+          "id": "1",
+          "name": "Expressjs"
+        },
+        {
+          "id": "2",
+          "name": "Nodejs"
+        },
+        {
+          "id": "3",
+          "name": "NoSQL"
         },
         {
           "id": "4",
@@ -55,18 +130,43 @@
     {
       "id": "3",
       "title": "Seo Master Landing Page",
+      "intro": "This project is a responsive web application built with Next.js. The design is based on a template from FreeCSS.com and styled using Tailwind CSS. The application aims to provide a seamless and responsive user experience across all devices.",
+      "api_doc_link": null,
       "description": "A Next.js frontend project focused on SEO, using static rendering and incorporating animations with the Framer Motion library.",
       "repo_link": "https://github.com/PhyuSinKhantAung/seo-master",
       "demo_link": "https://seo-master.vercel.app",
       "image": "/projects/seo-master.png",
-      "used_technologies": [
+      "details_image": "/projects/details-seo-master.jpg",
+      "features": [
         {
           "id": "1",
-          "name": "Next"
+          "name": "Next.js Framework",
+          "description": "The application is built using Next.js, providing server-side rendering and static site generation for optimal performance."
         },
         {
           "id": "2",
-          "name": "Tailwindcss"
+          "name": "Tailwind CSS",
+          "description": "Utilizes Tailwind CSS for efficient and customizable styling, ensuring a responsive and visually appealing design."
+        },
+        {
+          "id": "3",
+          "name": "Responsive Design",
+          "description": "Ensures a consistent user experience across various devices and screen sizes."
+        },
+        {
+          "id": "4",
+          "name": "UI Design from FreeCSS.com",
+          "description": "The UI design is sourced from FreeCSS.com, integrated into the Next.js application."
+        }
+      ],
+      "used_technologies": [
+        {
+          "id": "1",
+          "name": "Nextjs"
+        },
+        {
+          "id": "2",
+          "name": "Tailwind CSS"
         },
         {
           "id": "3",
@@ -76,56 +176,164 @@
     },
     {
       "id": "4",
-      "title": "Learn Hub",
+      "title": "Learn Hub API",
+      "intro": "Welcome to the Learning Platform project! This platform is designed to facilitate online learning interactions between administrators, teachers, and students. With features like course enrollment, assignment submissions, automatic grading, and file uploading capabilities, it aims to provide a seamless educational experience.",
+      "api_doc_link": "https://documenter.getpostman.com/view/24389707/2sA3JT4ei4",
       "description": "A backend API for a learning platform built with NestJS framework supporting course enrollment, lesson management, and teacher/admin roles.",
-      "repo_link": "https://github.com/PhyuSinKhantAung/to-do-list",
-      "demo_link": "https://to-do-list-teal-psi.vercel.app",
+      "repo_link": "https://github.com/PhyuSinKhantAung/learn-hub",
+      "demo_link": null,
       "image": "/projects/learn-hub.jpg",
-      "used_technologies": [
+      "details_image": "/projects/details-learn-hub.jpg",
+      "features": [
         {
           "id": "1",
-          "name": "React"
+          "name": "User Roles",
+          "description": "The platform supports multiple user roles including admin, teacher, and student, each with their respective permissions and functionalities."
         },
         {
           "id": "2",
-          "name": "Tailwindcss"
+          "name": "Course Management",
+          "description": "Teachers can create courses, lessons, and lesson episodes, organizing the learning materials efficiently."
+        },
+        {
+          "id": "3",
+          "name": "Assignment Submissions",
+          "description": "Students can enroll in courses and submit assignments related to course lessons."
+        },
+        {
+          "id": "4",
+          "name": "Automatic Grading",
+          "description": "The system automatically grades courses based on students' assignment results, streamlining the evaluation process."
+        },
+        {
+          "id": "5",
+          "name": "File Uploading",
+          "description": "Users can upload various file types including Word documents, PDFs, and images in different contexts such as assignment submissions and course materials."
+        },
+        {
+          "id": "6",
+          "name": "Authentication",
+          "description": "JWT authentication and Google authentication via Passport.js in NestJS ensure secure access to the platform."
+        }
+      ],
+      "used_technologies": [
+        {
+          "id": "1",
+          "name": "NestJS"
+        },
+        {
+          "id": "2",
+          "name": "Passportjs"
+        },
+        {
+          "id": "3",
+          "name": "Prisma"
+        },
+        {
+          "id": "4",
+          "name": "PostgreSQL"
         }
       ]
     },
-
     {
       "id": "5",
       "title": "Cocktails",
+      "intro": "Welcome to Cocktails Explorer, your ultimate destination for exploring a wide variety of cocktails! This project, built with Next.js and leveraging app router, allows users to discover and learn about different cocktails sourced from an external free cocktails API.",
+      "api_doc_link": null,
       "description": "A Next.js frontend application for exploring cocktails, allowing users to search for and view detailed information about various cocktails.",
-      "repo_link": "https://github.com/PhyuSinKhantAung/exchange-currency",
-      "demo_link": "https://exchange-currency-three.vercel.app",
+      "repo_link": "https://github.com/PhyuSinKhantAung/cocktails",
+      "demo_link": "https://cocktails-silk.vercel.app",
+      "details_image": "/projects/details-cocktails.jpg",
+      "features": [
+        {
+          "id": "1",
+          "name": "Next.js Application",
+          "description": "Cocktails Explorer is developed as a Next.js application, providing server-side rendering and seamless navigation between pages using app router."
+        },
+        {
+          "id": "2",
+          "name": "External API Integration",
+          "description": "The project utilizes an external free cocktails API to fetch and display cocktail data, including names, ingredients, instructions, and images."
+        },
+        {
+          "id": "3",
+          "name": "Search Functionality",
+          "description": "Users can search for cocktails by their names, making it easy to find specific drinks of interest."
+        },
+        {
+          "id": "4",
+          "name": "Cocktail Details",
+          "description": "Users can view detailed information about each cocktail, including its ingredients, instructions for preparation, and a visually appealing image."
+        },
+        {
+          "id": "5",
+          "name": "Responsive Design",
+          "description": "The application is designed to be responsive, ensuring a consistent and enjoyable experience across various devices and screen sizes."
+        }
+      ],
       "image": "/projects/cocktails.png",
       "used_technologies": [
         {
           "id": "1",
-          "name": "Html"
+          "name": "Nextjs-14"
         },
         {
           "id": "2",
-          "name": "Css"
-        },
-        {
-          "id": "3",
-          "name": "Javascript"
+          "name": "Tailwind CSS"
         }
       ]
     },
     {
       "id": "6",
-      "title": "Movie Ticket Booking Api",
+      "title": "Movie Ticket Booking API",
+      "intro": "Welcome to the backend API repository for the Movie Ticket Booking System. This API is built using Express.js and Node.js, with MongoDB as the database. It provides functionality for user authentication using JWT tokens, including refresh token logic. Additionally, it offers authorization features such as restricting certain actions to admin users only, like creating movies or changing movie statuses.",
+      "api_doc_link": null,
       "description": "An API for a movie ticket booking system where users can book tickets for specific showtimes. Admins manage bookings, adjust schedules.",
       "repo_link": "https://github.com/PhyuSinKhantAung/movie-ticket-booking-system",
-      "demo_link": "https://github.com/PhyuSinKhantAung/movie-ticket-booking-system/archive/refs/heads/main.zip",
+      "demo_link": null,
       "image": "/projects/movie-ticket-booking-system.jpg",
+      "details_image": "/projects/movie-ticket-booking-system.jpg",
+      "features": [
+        {
+          "id": "1",
+          "name": "Authentication",
+          "description": "Utilizes JWT tokens for user authentication with refresh token logic."
+        },
+        {
+          "id": "2",
+          "name": "Authorization",
+          "description": "Implements role-based authorization, allowing only admin users to perform certain actions."
+        },
+        {
+          "id": "3",
+          "name": "Image Upload",
+          "description": "Supports image uploads to Cloudinary using Multer for movie-related content."
+        },
+        {
+          "id": "4",
+          "name": "Forgot Password",
+          "description": "Implements a mail system for the forgot password logic, allowing users to reset their passwords via email."
+        },
+        {
+          "id": "5",
+          "name": "Movie Management",
+          "description": "Provides functionality for managing movies, including creation, modification, and status changes."
+        },
+        {
+          "id": "6",
+          "name": "Cinema Company and Venue Management",
+          "description": "Supports multiple cinema companies and their respective venues, allowing users to book movies at specific venues."
+        },
+        {
+          "id": "7",
+          "name": "Seat Reservation",
+          "description": "Allows admin users to insert seats for specific dates and movies, enabling users to book seats for their chosen movies."
+        }
+      ],
       "used_technologies": [
         {
           "id": "1",
-          "name": "Express"
+          "name": "Expressjs"
         },
         {
           "id": "2",
@@ -134,53 +342,6 @@
         {
           "id": "3",
           "name": "Mongodb"
-        }
-      ]
-    }
-  ],
-
-  "extra": [
-    {
-      "id": "7",
-      "title": "Pig Game",
-      "description": "A two-player Pig game where players roll dice to accumulate points, but rolling a one resets their score and passes the turn to the other player.",
-      "repo_link": "https://github.com/PhyuSinKhantAung/generate-the-dice",
-      "demo_link": "https://generate-the-dice.vercel.app",
-      "image": "/projects/pig-game.png",
-      "used_technologies": [
-        {
-          "id": "1",
-          "name": "Html"
-        },
-        {
-          "id": "2",
-          "name": "Css"
-        },
-        {
-          "id": "3",
-          "name": "Javascript"
-        }
-      ]
-    },
-    {
-      "id": "8",
-      "title": "Guessing Number",
-      "description": "A number guessing game built with vanilla JavaScript where users guess the computer's secret number with provided hints.",
-      "repo_link": "https://github.com/PhyuSinKhantAung/guess-my-number",
-      "demo_link": "https://guess-my-number-cyan.vercel.app",
-      "image": "/projects/guessing-number.png",
-      "used_technologies": [
-        {
-          "id": "1",
-          "name": "Html"
-        },
-        {
-          "id": "2",
-          "name": "Css"
-        },
-        {
-          "id": "3",
-          "name": "Javascript"
         }
       ]
     }
