@@ -2,11 +2,11 @@
   "data": [
     {
       "id": "1",
-      "title": "Social Media App",
-      "description": "This is my first experienced fullstack app with the using of MERN technologies.Users can do social-media features like posting, liking, commenting, sharing and saving posts. And also users can connect friends and unfriend.  ",
-      "repo_link": "https://github.com/PhyuSinKhantAung/social-media-app",
+      "title": "Cravings Store",
+      "description": "A full-stack snack ordering app using Next.js and Prisma with PostgreSQL, featuring cart functionality and user authentication.",
+      "repo_link": "https://github.com/PhyuSinKhantAung/cravings-store",
       "demo_link": "https://documenter.getpostman.com/view/24389707/2s9YkrcfWX",
-      "image": "/projects/social-media-site.jpg",
+      "image": "/projects/cravings-store.png",
       "used_technologies": [
         {
           "id": "1",
@@ -28,11 +28,11 @@
     },
     {
       "id": "2",
-      "title": "Keep Notes",
-      "description": "I used nextjs 14 feature, server actions, to develop next full stack crud app. This is serverless fullstack app with mongodb.",
+      "title": "Social Media App",
+      "description": "A dynamic social media application built using the MERN stack for real-time communication, user interactions, and personalized content sharing.",
       "repo_link": "https://github.com/PhyuSinKhantAung/keep-notes",
       "demo_link": "https://keep-notes-six.vercel.app/notes",
-      "image": "/projects/keep-notes.png",
+      "image": "/projects/social-media-site.jpg",
       "used_technologies": [
         {
           "id": "1",
@@ -55,7 +55,7 @@
     {
       "id": "3",
       "title": "Seo Master Landing Page",
-      "description": "This is my frontend-practised project. Simply project with the using of nextjs to be good at seo and I rendered data with nextjs static rending method. I added animation with framer-motion library.",
+      "description": "A Next.js frontend project focused on SEO, using static rendering and incorporating animations with the Framer Motion library.",
       "repo_link": "https://github.com/PhyuSinKhantAung/seo-master",
       "demo_link": "https://seo-master.vercel.app",
       "image": "/projects/seo-master.png",
@@ -76,11 +76,11 @@
     },
     {
       "id": "4",
-      "title": "React ToDO",
-      "description": "This is react practised app, just a todo app. I used localstorage to store user's data",
+      "title": "Learn Hub",
+      "description": "A backend API for a learning platform built with NestJS framework supporting course enrollment, lesson management, and teacher/admin roles.",
       "repo_link": "https://github.com/PhyuSinKhantAung/to-do-list",
       "demo_link": "https://to-do-list-teal-psi.vercel.app",
-      "image": "/projects/react-toDO.png",
+      "image": "/projects/learn-hub.jpg",
       "used_technologies": [
         {
           "id": "1",
@@ -95,11 +95,11 @@
 
     {
       "id": "5",
-      "title": "Exchange Calculator",
-      "description": "Currency exchange calculator and user can save his or her exchange data as a history.",
+      "title": "Cocktails",
+      "description": "A Next.js frontend application for exploring cocktails, allowing users to search for and view detailed information about various cocktails.",
       "repo_link": "https://github.com/PhyuSinKhantAung/exchange-currency",
       "demo_link": "https://exchange-currency-three.vercel.app",
-      "image": "/projects/exchange-calculator.png",
+      "image": "/projects/cocktails.png",
       "used_technologies": [
         {
           "id": "1",
@@ -117,30 +117,33 @@
     },
     {
       "id": "6",
-      "title": "Guessing Number",
-      "description": "Guessing computer's number with the hints of getting high or low.",
-      "repo_link": "https://github.com/PhyuSinKhantAung/guess-my-number",
-      "demo_link": "https://guess-my-number-cyan.vercel.app",
-      "image": "/projects/guessing-number.png",
+      "title": "Movie Ticket Booking Api",
+      "description": "An API for a movie ticket booking system where users can book tickets for specific showtimes. Admins manage bookings, adjust schedules.",
+      "repo_link": "https://github.com/PhyuSinKhantAung/movie-ticket-booking-system",
+      "demo_link": "https://github.com/PhyuSinKhantAung/movie-ticket-booking-system/archive/refs/heads/main.zip",
+      "image": "/projects/movie-ticket-booking-system.jpg",
       "used_technologies": [
         {
           "id": "1",
-          "name": "Html"
+          "name": "Express"
         },
         {
           "id": "2",
-          "name": "Css"
+          "name": "Nodejs"
         },
         {
           "id": "3",
-          "name": "Javascript"
+          "name": "Mongodb"
         }
       ]
-    },
+    }
+  ],
+
+  "extra": [
     {
       "id": "7",
       "title": "Pig Game",
-      "description": "This game will have to participate two users. Player 1 had to dice repeatedly and the result he got will be added with the old ones. But once he got the result one he will lose his all results. And the player two's turn will be.",
+      "description": "A two-player Pig game where players roll dice to accumulate points, but rolling a one resets their score and passes the turn to the other player.",
       "repo_link": "https://github.com/PhyuSinKhantAung/generate-the-dice",
       "demo_link": "https://generate-the-dice.vercel.app",
       "image": "/projects/pig-game.png",
@@ -161,23 +164,23 @@
     },
     {
       "id": "8",
-      "title": "Movie Ticket Booking Api",
-      "description": "Online booking ticket api using Express, Nodejs, Mongodb with typescript. User can book online ticket from different kind of cinemas. Admins from cinemas can be assigned to do operations.",
-      "repo_link": "https://github.com/PhyuSinKhantAung/movie-ticket-booking-system",
-      "demo_link": "https://github.com/PhyuSinKhantAung/movie-ticket-booking-system/archive/refs/heads/main.zip",
-      "image": "/projects/movie-ticket-booking.jpg",
+      "title": "Guessing Number",
+      "description": "A number guessing game built with vanilla JavaScript where users guess the computer's secret number with provided hints.",
+      "repo_link": "https://github.com/PhyuSinKhantAung/guess-my-number",
+      "demo_link": "https://guess-my-number-cyan.vercel.app",
+      "image": "/projects/guessing-number.png",
       "used_technologies": [
         {
           "id": "1",
-          "name": "Express"
+          "name": "Html"
         },
         {
           "id": "2",
-          "name": "Nodejs"
+          "name": "Css"
         },
         {
           "id": "3",
-          "name": "Mongodb"
+          "name": "Javascript"
         }
       ]
     }

@@ -1,13 +1,21 @@
-'use client';
-import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
+import React from "react";
+import AboutMe from "@/components/AboutMe";
+import Projects from "@/components/Projects";
+import Home from "@/components/Home";
+import Contact from "@/components/Contact";
+import ScrollTop from "@/components/layout/ScrollTop";
 
-export default function Home() {
-  const router = useRouter();
+const HomePage = () => {
+  return (
+    <div>
+      <ScrollTop />
 
-  useEffect(() => {
-    router.push('/about');
-  }, []);
+      <Home></Home>
+      <AboutMe></AboutMe>
+      <Projects></Projects>
+      <Contact></Contact>
+    </div>
+  );
+};
 
-  return null;
-}
+export default HomePage;
