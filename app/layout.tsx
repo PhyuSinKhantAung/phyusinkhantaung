@@ -22,23 +22,25 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${alegreya.className} text-sm `}>
+      <body className={`${alegreya.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar navData={NavData.data} />
+          <main className="mt-20 px-4">
+            <Navbar navData={NavData.data} />
 
-          <ContentLayout>{children}</ContentLayout>
+            {children}
+            <footer>
+              <hr />
+              <span className="flex items-center justify-center py-6 text-muted-foreground">
+                Made by Phyu Sin © 2023
+              </span>
+            </footer>
+          </main>
         </ThemeProvider>
-        <footer>
-          <hr />
-          <span className="flex items-center justify-center py-6 text-muted-foreground">
-            Made by Phyu Sin © 2023
-          </span>
-        </footer>
       </body>
     </html>
   );

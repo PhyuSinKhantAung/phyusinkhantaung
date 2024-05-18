@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { TypeAnimation } from "react-type-animation";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Textarea } from "./ui/textarea";
@@ -9,9 +8,7 @@ import { Facebook, Github, Instagram, Linkedin } from "lucide-react";
 import { send } from "emailjs-com";
 import { useToast } from "@/components/ui/use-toast";
 import { Toaster } from "./ui/toaster";
-import { motion } from "framer-motion";
-import { globalVariants } from "@/animation";
-
+import PageTitle from "@/components/ui/title";
 interface Social {
   id: string;
   name: string;
@@ -57,30 +54,12 @@ const Contact = () => {
       });
   };
   return (
-    <motion.div
-      variants={globalVariants.containerVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      className="mx-auto p-1 md:max-w-[80%]"
-    >
+    <div className="mx-auto my-6 p-1 sm:mt-8 xl:max-w-6xl">
       <Toaster />
 
-      <div className="mb-8 mt-4 lg:my-8">
-        <TypeAnimation
-          sequence={[`Let's get in touch !`, 1000, "", 1000]}
-          wrapper="span"
-          speed={20}
-          style={{
-            fontSize: "3em",
-            display: "inline-block",
-            fontWeight: 700,
-            transition: "ease-in",
-          }}
-          repeat={Infinity}
-        />
-      </div>
-      <div className="md:flex">
+      <PageTitle title="Let's get in touch!"></PageTitle>
+
+      <div className="my-6 md:flex">
         <form onSubmit={onSubmit} className="flex flex-col gap-y-5 md:w-1/2 ">
           <Input
             placeholder="Enter your name"
@@ -149,7 +128,7 @@ const Contact = () => {
           </ul>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
