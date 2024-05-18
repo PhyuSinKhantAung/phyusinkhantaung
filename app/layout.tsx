@@ -33,9 +33,10 @@ export default function RootLayout({
             <Navbar navData={NavData.data} />
 
             {children}
-            <footer>
+
+            <footer className="float-end h-5 w-full">
               <hr />
-              <span className="flex items-center justify-center py-6 text-muted-foreground">
+              <span className="mx-auto flex items-center justify-center py-6 text-muted-foreground">
                 Made by Phyu Sin © 2023
               </span>
             </footer>

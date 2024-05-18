@@ -13,20 +13,30 @@ import ProjectsData from "@/data/projects.json";
 import Link from "next/link";
 import Title from "@/components/ui/title";
 
-interface Project {
+export type Feature = {
+  id: string;
+  name: string;
+  description: string;
+};
+
+export type Project = {
   id: string;
   title: string;
   description: string;
   repo_link: string;
-  demo_link: string;
+  demo_link: string | null;
   download_link?: string;
   image: string;
   used_technologies: Array<UsedTechnology>;
-}
-interface UsedTechnology {
+  details_image: string;
+  features: Feature[];
+  intro: string;
+  api_doc_link: null | string;
+};
+export type UsedTechnology = {
   id: string;
   name: string;
-}
+};
 
 const Projects = () => {
   return (
