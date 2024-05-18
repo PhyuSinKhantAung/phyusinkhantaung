@@ -11,10 +11,7 @@ const page = ({ params }: { params: { id: string } }) => {
   const projects = data.data;
   const projectId = params.id;
 
-  console.log({ projectId });
   const project = projects.find((item: Project) => item.id === projectId);
-
-  console.log({ project });
 
   return (
     <div>

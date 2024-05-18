@@ -42,11 +42,9 @@ const Contact = () => {
           reply_to: "",
         });
         setIsLoading(false);
-        console.log("success", response.status, response.text);
       })
       .catch((error) => {
         setIsLoading(false);
-        console.log("failed", error);
         toast({
           variant: "destructive",
           description: "Something went wrong!",
