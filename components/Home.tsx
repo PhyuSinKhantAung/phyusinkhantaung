@@ -53,7 +53,7 @@ const Home = () => {
       <div className=" xl:w-1/2">
         <div className="my-16 flex justify-start xl:my-10 xl:justify-end">
           <Image
-            src={"/my-photo.jpg"}
+            src={"/image.png"}
             alt="my-photo"
             className="image-shadow rounded-2xl border-2 border-ring object-cover"
             width={400}
