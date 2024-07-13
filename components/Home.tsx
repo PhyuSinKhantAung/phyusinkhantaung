@@ -39,7 +39,7 @@ const Home = () => {
 
         <div>
           <Link
-            href={"/Phyu-Sin-Khant-Aung.pdf"}
+            href={"/Phyu Sin Khant Aung Resume.pdf"}
             download="Phyu Sin Khant Aung Resume"
             target="_blank"
           >
