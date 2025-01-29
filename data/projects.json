@@ -1,5 +1,5 @@
 {
-  "data": [
+  "my_creations": [
     {
       "id": "1",
       "title": "Cravings Store",
@@ -344,6 +344,32 @@
           "name": "Mongodb"
         }
       ]
+    }
+  ],
+  "real_world_projects": [
+    {
+      "id": "1",
+      "title": "Telehealth Consultation App",
+      "role": "Backend Developer",
+      "used_technologies": [
+        {
+          "id": "1",
+          "name": "Node.js"
+        },
+        {
+          "id": "2",
+          "name": "Express.js"
+        },
+        {
+          "id": "3",
+          "name": "MongoDB"
+        },
+        {
+          "id": "4",
+          "name": "JavaScript"
+        }
+      ],
+      "description": "Welcome to the Telehealth Consultation App, an application designed to facilitate telehealth consultations between patients and doctors."
     }
   ]
 }

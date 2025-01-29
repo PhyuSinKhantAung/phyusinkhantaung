@@ -3,6 +3,7 @@ import about from "@/data/about.json";
 import { FaNode, FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import {
+  SiExpress,
   SiJavascript,
   SiMongodb,
   SiNestjs,
@@ -12,26 +13,6 @@ import { Database } from "lucide-react";
 import PageTitle from "@/components/ui/title";
 
 const skills = [
-  {
-    id: 1,
-    name: "React",
-    icon: <FaReact />,
-  },
-  {
-    id: 2,
-    name: "Next",
-    icon: <TbBrandNextjs />,
-  },
-  {
-    id: 3,
-    name: "Nodejs",
-    icon: <FaNode />,
-  },
-  {
-    id: 4,
-    name: "Mongodb",
-    icon: <SiMongodb />,
-  },
   {
     id: 5,
     name: "Javascript",
@@ -43,14 +24,40 @@ const skills = [
     icon: <SiTypescript />,
   },
   {
-    id: 7,
-    name: "Nestjs",
-    icon: <SiNestjs />,
+    id: 1,
+    name: "ReactJS",
+    icon: <FaReact />,
+  },
+  {
+    id: 2,
+    name: "NextJS",
+    icon: <TbBrandNextjs />,
   },
   {
     id: 8,
-    name: "SQL/Prisma",
+    name: "SQL/ PostgreSQL",
     icon: <Database />,
+  },
+  {
+    id: 4,
+    name: "NoSQL/ MongoDB",
+    icon: <SiMongodb />,
+  },
+
+  {
+    id: 7,
+    name: "NestJS",
+    icon: <SiNestjs />,
+  },
+  {
+    id: 9,
+    name: "ExpressJS",
+    icon: <SiExpress />,
+  },
+  {
+    id: 3,
+    name: "NodeJS",
+    icon: <FaNode />,
   },
 ];
 
@@ -60,10 +67,8 @@ const AboutMe = () => {
       <PageTitle title="About Me"></PageTitle>
 
       <div>
+        <p>{about.data.paragraph_5}</p>
         <div>
-          <p>{about.data.paragraph_3}</p>
-        </div>
-        <div className="my-5 ">
           <ul className="my-4 ml-4 grid list-disc grid-cols-12 text-base [&>li]:mt-4">
             {skills.map((skill: { id: number; name: string; icon: any }) => (
               <li
@@ -76,7 +81,11 @@ const AboutMe = () => {
             ))}
           </ul>
         </div>
-        <p className="rounded-md bg-secondary p-3">{about.data.paragraph_2}</p>
+        <div className="rounded-md bg-secondary p-3">
+          <p>{about.data.paragraph_2}</p>
+          <p className="py-3">{about.data.paragraph_3}</p>
+          <p>{about.data.paragraph_4}</p>
+        </div>
       </div>
     </div>
   );
