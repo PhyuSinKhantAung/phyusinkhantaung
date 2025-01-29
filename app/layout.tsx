@@ -35,7 +35,9 @@ export default function RootLayout({
           <main className="mt-20 px-4">
             <Navbar navData={NavData.data} />
 
-            {children}
+            <div className="mx-auto xl:max-w-screen-xl 2xl:max-w-screen-2xl">
+              {children}
+            </div>
 
             <footer className="float-end h-5 w-full">
               <hr />

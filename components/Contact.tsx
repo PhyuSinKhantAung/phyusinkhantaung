@@ -52,7 +52,7 @@ const Contact = () => {
       });
   };
   return (
-    <div className="mx-auto my-6 p-1 sm:mt-8 xl:max-w-6xl">
+    <div className="my-6 p-1 sm:mt-8">
       <Toaster />
 
       <PageTitle title="Let's get in touch!"></PageTitle>

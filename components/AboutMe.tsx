@@ -56,7 +56,7 @@ const skills = [
 
 const AboutMe = () => {
   return (
-    <div className="mx-auto mb-6 xl:max-w-6xl">
+    <div className="mb-6">
       <PageTitle title="About Me"></PageTitle>
 
       <div>

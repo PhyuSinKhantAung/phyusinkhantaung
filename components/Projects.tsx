@@ -40,10 +40,10 @@ export type UsedTechnology = {
 
 const Projects = () => {
   return (
-    <div className="mx-auto my-20 xl:max-w-6xl">
+    <div className="my-20">
       <Title title="My Creations"></Title>
 
-      <div className="mx-auto my-5 grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:max-w-6xl">
+      <div className="my-5 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {ProjectsData.data.map((project: Project) => (
           <div key={project.id} className="">
             <Card>

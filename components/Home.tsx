@@ -7,9 +7,9 @@ import Image from "next/image";
 
 const Home = () => {
   return (
-    <div className="mx-auto xl:flex xl:max-w-6xl xl:py-5">
-      <div className="xl:w-1/2">
-        <h1 className="text-4xl font-bold leading-[2.6rem] tracking-tight xl:text-6xl">
+    <div className="lg:my-40 lg:flex">
+      <div className="lg:w-1/2">
+        <h1 className="text-4xl font-bold leading-[2.6rem] tracking-tight lg:text-6xl">
           {about.data.title}
         </h1>
         <h2 className="pt-5 text-lg font-semibold">{about.data.subtitle}</h2>
@@ -50,8 +50,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className=" xl:w-1/2">
-        <div className="my-16 flex justify-start xl:my-10 xl:justify-end">
+      <div className="lg:w-1/2">
+        <div className="mb-10 mt-12 flex justify-start lg:ml-48 lg:mt-4 xl:ml-80">
           <Image
             src={"/image.png"}
             alt="my-photo"

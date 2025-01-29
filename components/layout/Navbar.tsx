@@ -33,13 +33,7 @@ export default function Navbar({ navData }: { navData: Array<NavItem> }) {
         "fixed left-0 top-0 mb-10 w-full overflow-hidden bg-background p-4 shadow",
       )}
     >
-      <nav
-        // initial="hidden"
-        // animate="visible"
-        // variants={fadeInVariants}
-        // transition={{ duration: 0.5 }}
-        className="mx-auto flex w-full items-center justify-between xl:max-w-6xl xl:text-lg"
-      >
+      <nav className="mx-auto flex w-full max-w-screen-2xl items-center justify-between xl:text-lg">
         <Code2 />
 
         <div className="hidden items-center gap-x-5 xl:flex">
