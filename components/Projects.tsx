@@ -288,7 +288,7 @@ const Projects = () => {
           Sun Community Health (EMR Platform)
         </h2>
         <p className="py-2 ">
-          A platform designed for doctors to record and manage their
+          A platform designed for doctors to record and manage their {""}
           {`patients`} electronic medical records (EMRs) efficiently within the
           app. It helps streamline patient data management, making it easier for
           healthcare professionals to update, access, and track medical records.

@@ -10,7 +10,7 @@ const Home = () => {
     <div className="lg:my-40 lg:flex">
       <div className="lg:w-1/2">
         <h1 className="text-4xl font-bold leading-[2.6rem] tracking-tight lg:text-6xl">
-          Hello, ${`I'm`} <br></br> Phyu Sin Khant Aung ツ
+          Hello, {`I'm`} <br></br> Phyu Sin Khant Aung ツ
         </h1>
         <h2 className="pt-5 text-lg font-semibold">{about.data.subtitle}</h2>
         <p className="text-base leading-7 [&:not(:first-child)]:mt-6">
