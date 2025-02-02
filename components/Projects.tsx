@@ -45,13 +45,20 @@ const Projects = () => {
     <div className="my-20">
       <Title title="Real-World Projects"></Title>
       <div className="my-4 mt-6">
-        <h2 className="text-2xl font-semibold ">MyanCare Telehealth</h2>
+        <h2 className="text-2xl font-semibold">MyanCare Telehealth</h2>
         <p className="py-2 ">
-          A Telehealth App for a hospital in Myanmar. The app allows doctors to
-          remotely consult with patients and receive real-time updates on their
-          health status.
+          MyanCare, established in 2018, is first telehealth platform in Myanmar
+          providing service to users with over 700 doctors through online
+          consultations. It allows users to book appointments, have video or
+          audio consultations, and get medical advice without visiting clinics
+          in person. The platform offers services like electronic medical
+          records(EMR), health record management, and secure payment options.
+          It’s designed to improve healthcare access, especially for people in
+          remote areas.
         </p>
       </div>
+      <div className="mt-4 text-lg  italic">My Contributions to MyanCare:</div>
+
       <div className=" my-2 grid w-full grid-cols-2 lg:grid-cols-4 ">
         <Image
           src={"/projects/real-world-pjs/myancare-teleconsultation.jpg"}
@@ -82,12 +89,12 @@ const Projects = () => {
           className="border-2 border-ring "
         />
       </div>
-      <div className="mt-4 text-lg  italic">My Contributions to MyanCare:</div>
-      <div className="text-md my-4">
+      <div className="text-md my-6">
         <div className="font-bold">What did i do in MyanCare?</div>
         <p>
-          ╰┈➤ Developed Admin Panel (frontend) and also built and optimized APIs
-          (backend) for patient and doctor apps.
+          ╰┈➤ Developed and maintained high performance servers with the
+          collaborations of senior software engineers & mobile developers for
+          patient and doctor apps.
         </p>
         <br />
         <div className="font-bold">The Features I worked on</div>
@@ -113,7 +120,7 @@ const Projects = () => {
       </div>
       <div className="text-md my-4">
         <div className="rounded-md bg-secondary p-3">
-          <div className="text-lg font-semibold">Impact .ᐟ</div>
+          <div className="text-lg font-semibold">Impact .˚✦</div>
           <p>
             Ensured uninterrupted service during VoIP migration. Delivered a
             more secure and efficient platform for patients and doctors.
@@ -174,12 +181,16 @@ const Projects = () => {
           YinThway (Call Center Platform)
         </h2>
         <p className="py-2 ">
-          A call center platform that connects parents with doctors for
-          consultations about their babies. It allows users to purchase call
-          packages for easy communication with healthcare professionals,
-          focusing on baby-related care and support.
+          YinThway is a healthcare call center service under MyanCare,
+          specifically focused on maternal and child health. It provides online
+          consultations, health tracking, and educational resources for
+          expecting mothers, new parents, and caregivers. YinThway allows users
+          to purchase call packages for easy communication with healthcare
+          professionals, focusing on baby-related care and support.
         </p>
       </div>
+      <div className="mt-4 text-lg  italic">My Contributions to YinThway:</div>
+
       <div className=" my-2 grid w-full grid-cols-2 lg:grid-cols-4 ">
         <Image
           src={"/projects/real-world-pjs/yinthway-baby-tracker.jpg"}
@@ -203,18 +214,17 @@ const Projects = () => {
           className="border-2 border-ring "
         />
       </div>
-      <div className="mt-4 text-lg  italic">My Contributions to YinThway:</div>
-      <div className="text-md my-4">
+      <div className="text-md my-6">
         <div className="font-bold">What did i do in YinThway?</div>
         <p>
-          ╰┈➤ Developed Admin Panel (frontend) and also built and optimized APIs
-          (backend) for user app.
+          ╰┈➤ Developed Admin Panel (frontend) and designed optimized APIs for
+          both mobile & web platforms.
         </p>
         <br />
         <div className="font-bold">The Features I worked on</div>
         <p>
           ╰┈➤ Baby Tracker, Knowledge Sharing Modules such as Development
-          Milestones, Vaccine Info
+          Milestones, Vaccine Info.
         </p>
         <br />
         <p>
@@ -235,7 +245,7 @@ const Projects = () => {
       </div>
       <div className="text-md my-4">
         <div className="rounded-md bg-secondary p-3">
-          <div className="text-lg font-semibold">Impact .ᐟ</div>
+          <div className="text-lg font-semibold">Impact .˚✦</div>
           <p>
             Enabled over 50,000 parents to track their baby’s growth and receive
             timely reminders for vaccinations. Increased user engagement on the
@@ -295,6 +305,9 @@ const Projects = () => {
           healthcare professionals to update, access, and track medical records.
         </p>
       </div>
+      <div className="mt-4 text-lg  italic">
+        My Contributions to Sun (EMR Platform):
+      </div>
       <div className=" my-2 grid w-full grid-cols-2 lg:grid-cols-4 ">
         <Image
           src={"/projects/real-world-pjs/sun-app.jpg"}
@@ -311,10 +324,8 @@ const Projects = () => {
           className="border-2 border-ring "
         />
       </div>
-      <div className="mt-4 text-lg  italic">
-        My Contributions to Sun (EMR Platform):
-      </div>
-      <div className="text-md my-4">
+
+      <div className="text-md my-6">
         <div className="font-bold">What did i do in Sun (EMR Platform)?</div>
         <p>
           ╰┈➤ Developed Admin Panel (frontend) and also built and optimized APIs
@@ -347,11 +358,11 @@ const Projects = () => {
       </div>
       <div className="text-md my-4">
         <div className="rounded-md bg-secondary p-3">
-          <div className="text-lg font-semibold">Impact .ᐟ</div>
+          <div className="text-lg font-semibold">Impact .˚✦</div>
           <p>
             Enabled over 1,000 doctors to create and edit EMRs efficiently,
-            reducing data entry time by 30%. Improved data accuracy by 20%
-            through form validation and error handling.
+            reducing data entry time. Improved data accuracy through form
+            validation and error handling.
           </p>
         </div>
       </div>
