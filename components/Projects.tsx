@@ -118,8 +118,9 @@ const Projects = () => {
             Ensured uninterrupted service during VoIP migration. Delivered a
             more secure and efficient platform for patients and doctors.
             Improved admin panel performance, enabling real-time data analysis
-            for over 10,000 users. Delivered actionable insights to
-            administrators, enhancing decision-making and platform efficiency.
+            for over 100,000 users. Creating a reporting system was helpful in a
+            real-world scenario to track their income where doctors were paid or
+            unpaid. This helped to identify and manage the income.
           </p>
         </div>
 
@@ -236,7 +237,7 @@ const Projects = () => {
         <div className="rounded-md bg-secondary p-3">
           <div className="text-lg font-semibold">Impact .ᐟ</div>
           <p>
-            Enabled over 1,000 parents to track their baby’s growth and receive
+            Enabled over 50,000 parents to track their baby’s growth and receive
             timely reminders for vaccinations. Increased user engagement on the
             platform by 15% through the knowledge-sharing module and baby
             tracker with easy access to baby records.
@@ -289,7 +290,7 @@ const Projects = () => {
         </h2>
         <p className="py-2 ">
           A platform designed for doctors to record and manage their {""}
-          {`patients`} electronic medical records (EMRs) efficiently within the
+          {`patients'`} electronic medical records (EMRs) efficiently within the
           app. It helps streamline patient data management, making it easier for
           healthcare professionals to update, access, and track medical records.
         </p>
@@ -348,7 +349,7 @@ const Projects = () => {
         <div className="rounded-md bg-secondary p-3">
           <div className="text-lg font-semibold">Impact .ᐟ</div>
           <p>
-            Enabled over 500 doctors to create and edit EMRs efficiently,
+            Enabled over 1,000 doctors to create and edit EMRs efficiently,
             reducing data entry time by 30%. Improved data accuracy by 20%
             through form validation and error handling.
           </p>
