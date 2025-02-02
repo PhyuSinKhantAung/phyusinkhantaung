@@ -28,10 +28,20 @@ const Contact = () => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
 
+  const template = "template_keplteb";
+  const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const userId = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
+
   const onSubmit = (e: any) => {
     e.preventDefault();
     setIsLoading(true);
-    send("service_h7ssxov", "template_keplteb", data, "nz8rtf2Y9zk38r7GJ")
+    if (!userId || !serviceId) {
+      toast({
+        description: "  Something went wrong!",
+      });
+      return;
+    }
+    send(serviceId, template, data, userId)
       .then((response) => {
         toast({
           description: "✅  Your email has been sent.",
@@ -46,7 +56,7 @@ const Contact = () => {
       })
       .catch((error) => {
         setIsLoading(false);
-        console.log({ error });
+        // console.log({ error });
         toast({
           variant: "destructive",
           description: "Something went wrong!",
@@ -98,7 +108,7 @@ const Contact = () => {
             say hello, just directly email me at `}
 
             <a
-              href="mailto:rollyphyusinkhant7290@gmail.com"
+              href="mailto:phyusinkhantaung22@gmail.com"
               className=" text-blue-700"
             >
               mail@phyusin.dev

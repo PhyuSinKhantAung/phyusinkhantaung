@@ -15,7 +15,7 @@
 @layer base {
   :root {
     --shadow: 6px 6px #2d323d;
-    --image-shadow: 2rem -2rem #111318;
+    --image-shadow: 2rem 2rem #111318;
     /* shadow-[3rem_-3rem_0.2rem_#8F9396] xl:ml-24 dark:shadow-[3rem_-3rem_0.2rem_#8F9396] */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;

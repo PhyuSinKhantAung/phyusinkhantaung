@@ -30,10 +30,10 @@ export default function Navbar({ navData }: { navData: Array<NavItem> }) {
   return (
     <div
       className={cn(
-        "fixed left-0 top-0 mb-10 w-full overflow-hidden bg-background p-4 shadow",
+        "fixed left-0 top-0 z-50 mb-10 w-full overflow-hidden bg-background p-4 shadow",
       )}
     >
-      <nav className="mx-auto flex w-full max-w-screen-2xl items-center justify-between xl:text-lg">
+      <nav className=" mx-auto flex w-full max-w-screen-2xl items-center justify-between xl:text-lg">
         <Code2 />
 
         <div className="hidden items-center gap-x-5 xl:flex">
