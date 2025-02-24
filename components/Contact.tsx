@@ -56,7 +56,7 @@ const Contact = () => {
       })
       .catch((error) => {
         setIsLoading(false);
-        // console.log({ error });
+        console.log({ error });
         toast({
           variant: "destructive",
           description: "Something went wrong!",
